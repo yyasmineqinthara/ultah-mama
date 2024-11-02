@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffebee; /* Warna pastel pink */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mengubah ke flex-start untuk scroll */
+    height: auto; /* Ubah menjadi auto agar dapat discroll */
+    padding: 20px; /* Tambahkan padding pada body */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Maksimal lebar */
+    width: 100%; /* Lebar 100% untuk perangkat kecil */
+    margin-top: 2cm; /* Menambahkan jarak 2 cm di bagian atas */
+}
+
+h1 {
+    color: #ff6f61; /* Warna pink coral */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: #555;
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Galeri Foto */
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery h2 {
+    color: #ff6f61;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column; /* Menjadi kolom untuk tampilan mobile */
+    gap: 15px; /* Tambahkan jarak antara foto */
+}
+
+.photo-item {
+    text-align: center; /* Pusatkan teks di bawah foto */
+}
+
+.photos img {
+    width: 80%; /* Mengatur lebar gambar menjadi 80% dari kontainer */
+    max-width: 300px; /* Maksimal lebar gambar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    margin-top: 5px;
+    color: #777; /* Warna teks keterangan */
+    font-size: 0.9rem; /* Ukuran font keterangan */
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem; /* Ukuran font lebih kecil di perangkat mobile */
+    }
+
+    .message {
+        font-size: 1rem; /* Mengurangi ukuran font di perangkat mobile */
+    }
+
+    .photos img {
+        width: 80%; /* Ukuran gambar penuh untuk perangkat mobile */
+        max-width: 80%; /* Ukuran maksimum diatur sama */
+    }
+}
